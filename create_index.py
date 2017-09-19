@@ -11,3 +11,5 @@ def index_create(host, index, doc_type, id, data):
 		return pp.pprint(request.json())
 	else:
 		raise ValueError('Some error!!')
+
+index_create(host='http://localhost:9200', index='megacorp', doc_type='employee', id=4, data=data)
